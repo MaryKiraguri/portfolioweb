@@ -1,10 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-def index(request):
-    return HttpResponse('We made it this far!')
 
-def user(request):
-    return HttpResponse('Hello user')
-
-def portfolio(request):
+def about(request):
     return render(request, 'portfolioweb/index.html')
+
+def services(request):
+    return render(request, 'portfolioweb/services.html')
+
+
+def testimonials(request):
+    return render(request, 'portfolioweb/testimonials.html')
+
+def contacts(request):
+    return render(request, 'portfolioweb/contacts.html')
